@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function images(color) {
-  imageHome.src = `../CSS/Images/home-${color}.svg`;
-  imageAbout.src = `../CSS/Images/about-${color}.svg`;
+  imageHome.src = `./CSS/Images/home-${color}.svg`;
+  imageAbout.src = `./CSS/Images/about-${color}.svg`;
 }
 
 // console.log(themeIcon.classList.value);
