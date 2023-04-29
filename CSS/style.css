@@ -146,12 +146,9 @@ nav {
   transition: transform 0.3s ease-in-out;
   color: var(--all-text-color);
 }
-
 .links a:hover {
-  transform: translateY(-5px);
   color: var(--color);
 }
-
 .links {
   display: flex;
   gap: 10px;
@@ -195,9 +192,6 @@ img {
   box-shadow: var(--box-shadow);
   font-weight: 700;
   transition: all 0.3s ease-in-out;
-}
-.download-cv:hover {
-  box-shadow: var(--box-shadow-light-shade);
 }
 
 /* 88888888888888888888888888  About &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -318,10 +312,7 @@ img {
   padding: 8px 15px;
   transition: all 0.3s ease-in-out;
 }
-.projectX .links a:hover {
-  background-color: var(--color-light-shade);
-  /* box-shadow: var(--box-shadow-light-shade); */
-}
+
 /* 88888888888888888888888888  Contact Section &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 .contact {
   min-height: max-content;
@@ -370,9 +361,6 @@ img {
   color: var(--background-color);
 }
 
-#contact button:hover {
-  background-color: var(--color-light-shade);
-}
 .submitMessage {
   display: none;
   margin-top: 10px;
@@ -406,4 +394,21 @@ img {
 }
 .bottom p {
   margin: 10px 0;
+}
+
+@media (hover: hover) {
+  .links a:hover {
+    transform: translateY(-5px);
+    color: var(--color);
+  }
+  .download-cv:hover {
+    box-shadow: var(--box-shadow-light-shade);
+  }
+  .projectX .links a:hover {
+    background-color: var(--color-light-shade);
+    /* box-shadow: var(--box-shadow-light-shade); */
+  }
+  #contact button:hover {
+    background-color: var(--color-light-shade);
+  }
 }
