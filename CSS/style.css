@@ -206,6 +206,7 @@ img {
   padding-right: 20px;
 }
 .about-container {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -374,8 +375,8 @@ img {
 }
 .submitMessage {
   margin-top: 10px;
-  color: #333;
-  display: none;
+  color: var(--color);
+  /* display: none; */
 }
 
 /* 88888888888888888888888888  Bottom (Footer) &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
