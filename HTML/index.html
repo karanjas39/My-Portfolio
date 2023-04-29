@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style-responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="menu-btn"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <div class="links nav-links hide">
+        <a href="#back">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+      <div class="theme-change">
+        <i class="fa theme-icon fa-sun"></i>
+        <label class="switch">
+          <input type="checkbox" class="toggleBtn" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </nav>
+    <div id="back"></div>
+    <section class="home" id="home">
+      <img
+        src="../CSS/Images/home-light.svg"
+        alt="homeImage"
+        class="image-home"
+      />
+      <div class="home-text">
+        <p>Hi there! My name is <span>Jaskaran Singh</span>.</p>
+        <p class="home__subtitle">I'm a <span id="typing"></span></p>
+        <a href="#" class="download-cv" download="#">Download CV</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2>About Me<span>.</span></h2>
+      <div class="about-container">
+        <img
+          src="../CSS/Images/about-light.svg"
+          alt="about"
+          class="image-about"
+        />
+        <div class="about-text">
+          <div class="about-tab-links">
+            <button class="tab-links skills active-link">Skills</button>
+            <button class="tab-links experience">Experience</button>
+            <button class="tab-links education">Education</button>
+          </div>
+          <div class="tab-contents skills active-tab">
+            <ul>
+              <li>
+                <span>HTML5 and CSS3</span><br />
+                <!-- Proficient in creating well-structured and styled web pages. -->
+              </li>
+              <li>
+                <span>JavaScript</span><br />
+                <!-- Experienced in using JavaScript to -->
+                <!-- create dynamic and interactive web applications. -->
+              </li>
+              <li>
+                <span>Version Control</span><br />
+                <!-- Knowledgeable in using Git and -->
+                <!-- GitHub for version control and collaboration on projects. -->
+              </li>
+              <li>
+                <span>C/C++</span><br />
+                <!-- Experienced in writing efficient and -->
+                <!-- effective code in both C and C++ programming languages. -->
+              </li>
+              <li>
+                <span>Responsive Web Design</span><br />
+                <!-- Proficient in creating web
+                pages that are optimized for viewing on different devices and
+                screen sizes. -->
+              </li>
+              <li>
+                <span>API Integration</span><br />
+                <!-- Experienced in integrating APIs into web applications to add
+                functionality and improve user experience. -->
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents experience">
+            <ul>
+              <li>
+                <span>2022 - Current</span><br />
+                Front-End Developer
+              </li>
+              <li>
+                <span>2021 - 2022</span><br />
+                C/C++ Programmer
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents education">
+            <ul>
+              <li>
+                <span>2021 - Current</span><br />
+                B.Tech CSE at DAV University
+              </li>
+              <li>
+                <span>2019 - 2020</span><br />
+                Secondary Education
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projects<span>.</span></h2>
+      <div class="project-container">
+        <div class="projectX">
+          <span>HealthHealer.ai</span>
+          <span>
+            Your all-in-one Healthcare platform powered by Artificial
+            Intelligence that offers AI-based tools and resources to help people
+            stay healthy and informed.
+          </span>
+          <div class="links">
+            <a
+              href="https://karanjas39.github.io/HealthHealer.ai/"
+              target="_blank"
+              >See Live</a
+            >
+          </div>
+        </div>
+        <div class="projectX">
+          <span>Hotel Management</span>
+          <span>
+            This C++ console application is a hotel management system that
+            allows users to book, confirm, cancel, and check features of rooms
+            without a backend.
+          </span>
+          <div class="links">
+            <a
+              href="https://github.com/karanjas39/Hotel-Management.git"
+              target="_blank"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Me<span>.</span></h2>
+      <form name="submit-to-google-sheet">
+        <input
+          type="text"
+          name="Name"
+          class="name"
+          placeholder="Your Name"
+        /><br />
+        <input
+          type="email"
+          name="Email"
+          class="email"
+          placeholder="Your E-Mail"
+        /><br />
+        <textarea
+          name="Message"
+          placeholder="Your Message"
+          class="message"
+          cols="30"
+          rows="5"
+        ></textarea
+        ><br />
+        <button type="submit" onclick="clearForm()">Submit</button>
+        <p class="submitMessage">Message sent successfully</p>
+      </form>
+      <div class="bottom">
+        <a href="#home"><i class="fa fa-solid fa-angle-up"></i></a>
+        <div class="allIcons">
+          <a
+            href="https://www.facebook.com/jaskaransingh.dhillon.712"
+            target="_blank"
+            ><i class="fa fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jaskaran-singh-b805a7233"
+            target="_blank"
+          >
+            <i class="fa fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/karanjas39" target="_blank"
+            ><i class="fa fa-brands fa-github"></i
+          ></a>
+        </div>
+        <p>&copy; 2023 | Developed by Jaskaran Singh</p>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../JavaScript/script.js"></script>
+  </body>
+</html>
