@@ -376,7 +376,7 @@ img {
 .submitMessage {
   margin-top: 10px;
   color: var(--color);
-  /* display: none; */
+  display: none;
 }
 
 /* 88888888888888888888888888  Bottom (Footer) &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
