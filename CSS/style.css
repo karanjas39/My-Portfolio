@@ -374,9 +374,9 @@ img {
   background-color: var(--color-light-shade);
 }
 .submitMessage {
+  display: none;
   margin-top: 10px;
   color: var(--color);
-  display: none;
 }
 
 /* 88888888888888888888888888  Bottom (Footer) &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
