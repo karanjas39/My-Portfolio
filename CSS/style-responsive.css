@@ -133,6 +133,9 @@
   }
 }
 @media only screen and (max-width: 400px) {
+  .home {
+    gap: 70px;
+  }
   .links a {
     font-size: 18px;
   }
