@@ -13,6 +13,7 @@ const themeIcon = document.querySelector(".theme-icon");
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const navLinksEach = document.querySelectorAll("nav .links a");
+const sections = document.querySelectorAll("section");
 
 let index = 0;
 let charIndex = 0;
@@ -119,7 +120,16 @@ menuBtn.addEventListener("click", function () {
 });
 
 navLinksEach.forEach(function (link) {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    let i = 0;
     navLinks.classList.add("hide");
+    const section = e.target.attributes.href.value.replace("#", "");
+    const sec = document.getElementById(`${section}`);
+    if (i == 0 && sec != "home") {
+      sections.forEach(function (eachSec) {
+        eachSec.classList.add("hideIt");
+      });
+      sec.classList.toggle("hideIt");
+    }
   });
 });

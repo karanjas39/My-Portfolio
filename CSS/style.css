@@ -24,6 +24,7 @@ section {
   min-height: 100vh;
   padding-top: 54px;
 }
+
 section h2 {
   font-size: 42px;
   text-align: center;
@@ -47,7 +48,7 @@ section h2 span {
   --color: #0ca678;
   --color-light-shade: #20c997;
   --all-text-color: whitesmoke;
-  --nav-background: #343a40d6;
+  --nav-background: #343a40;
   --box-shadow-light-shade: 0 5px 20px 0.5px #20c997;
 }
 
@@ -314,9 +315,6 @@ img {
 }
 
 /* 88888888888888888888888888  Contact Section &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-.contact {
-  min-height: max-content;
-}
 #contact form {
   display: flex;
   flex-direction: column;
@@ -411,4 +409,8 @@ img {
   #contact button:hover {
     background-color: var(--color-light-shade);
   }
+}
+
+.hideIt {
+  display: none;
 }
