@@ -139,7 +139,7 @@ nav {
   cursor: pointer;
 }
 
-.links a {
+nav .links a {
   text-decoration: none;
   font-size: 20px;
   position: relative;
@@ -147,7 +147,7 @@ nav {
   transition: transform 0.3s ease-in-out;
   color: var(--all-text-color);
 }
-.links a:hover {
+nav .links a:hover {
   color: var(--color);
 }
 .links {
@@ -395,19 +395,21 @@ img {
 }
 
 @media (hover: hover) {
-  .links a:hover {
+  nav .links a:hover {
     transform: translateY(-5px);
     color: var(--color);
   }
   .download-cv:hover {
     box-shadow: var(--box-shadow-light-shade);
+    color: var(--all-text-color);
   }
   .projectX .links a:hover {
     background-color: var(--color-light-shade);
-    /* box-shadow: var(--box-shadow-light-shade); */
+    color: var(--all-text-color);
   }
   #contact button:hover {
     background-color: var(--color-light-shade);
+    color: var(--all-text-color);
   }
 }
 
