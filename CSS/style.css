@@ -373,6 +373,7 @@ img {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  margin-top: 20px;
 }
 
 .bottom a:nth-child(1) {
